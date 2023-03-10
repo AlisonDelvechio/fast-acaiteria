@@ -23,7 +23,13 @@ const router = createRouter({
       path: '/interscreen',
       name: 'interscreen',
       component: () => import('../components/Interscreen.vue')
-    }
+    },
+
+    {
+      path: '/interscreen2',
+      name: 'interscreen2',
+      component: () => import('../components/Interscreen2.vue')
+    },
   ]
 })
 
