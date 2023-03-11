@@ -10,36 +10,44 @@
         cols="12"
         sm="6"
         class="image-background"
-        style="background-color: blue;"
-      >
-        <!-- <img src="src\assets\img\interscreen\image_1.jpg" alt=""> -->
-      </v-col>
+      ></v-col>
       
       <!-- Column 2 -->
       <v-col
         cols="12"
         sm="6"
         align-self="center"
-        style="background-color: red;"
       >
         <!-- Buttons -->
         <div class="buttons pa-12">
-          <v-btn 
-            block 
-            color="primary"
-            size="x-large"
-            elevation="10"
+          <v-card
+            class="pa-2"
+            color="#E0E0E0"
           >
-            Sou Cliente
-          </v-btn>
-          <br>
-          <v-btn 
-            block
-            size="x-large"
-            elevation="10"
-          >
-            Sou Funcionário
-          </v-btn>
+            <v-btn 
+              block 
+              color="primary"
+              size="x-large"
+              elevation="10"
+            >
+              Sou Cliente
+            </v-btn>
+            <br>
+            <v-btn 
+              block
+              size="x-large"
+              elevation="10"
+            >
+              Sou Funcionário
+            </v-btn>
+          </v-card>
+        </div>
+
+        <div class="pr-12 pl-12">
+          <v-card
+            title="Card title"
+            text="teste"
+          ></v-card>
         </div>
       </v-col>
     </v-row>
@@ -75,7 +83,5 @@ export default defineComponent({
   background-repeat: no-repeat, repeat;
   background-size: 120% 100%;
   border: 5px solid #4b078a;
-  
-  transition: opacity 0.3s linear 2s;  
 }
 </style>
